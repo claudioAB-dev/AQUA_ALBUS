@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SERÉN - Agua Personalizada de Lujo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-slate-50">
+    <div class="min-h-screen bg-gradient-to-br from-slate-50 to-white">
+      <header
+        class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200"
+      >
+        <div class="container mx-auto px-6 py-4">
+          <div class="flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-2">
+              <i data-lucide="droplets" class="h-8 w-8 text-blue-600"></i>
+              <span
+                class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent"
+              >
+                SERÉN
+              </span>
+            </a>
+            <nav class="hidden md:flex space-x-8">
+              <a
+                href="#productos"
+                class="text-slate-700 hover:text-blue-600 transition-colors"
+                >Productos</a
+              >
+              <a
+                href="#servicios"
+                class="text-slate-700 hover:text-blue-600 transition-colors"
+                >Servicios</a
+              >
+              <a
+                href="#proceso"
+                class="text-slate-700 hover:text-blue-600 transition-colors"
+                >Proceso</a
+              >
+              <a
+                href="#contacto"
+                class="text-slate-700 hover:text-blue-600 transition-colors"
+                >Contacto</a
+              >
+            </nav>
+            <a
+              href="#contacto"
+              class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full transition-colors hidden sm:block"
+            >
+              Cotizar
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <section class="pt-28 md:pt-32 pb-16 relative overflow-hidden">
+        <div
+          class="absolute inset-0 bg-gradient-to-br from-blue-50 to-slate-100 opacity-50"
+        ></div>
+        <div class="container mx-auto px-6 relative z-10">
+          <div class="text-center max-w-4xl mx-auto">
+            <div class="mb-8">
+              <h1
+                class="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-slate-900 via-blue-800 to-slate-900 bg-clip-text text-transparent"
+              >
+                Eleva tu marca con
+                <span class="block mt-2 text-blue-600">agua personalizada</span>
+              </h1>
+              <p
+                class="text-xl md:text-2xl text-slate-600 mb-8 leading-relaxed"
+              >
+                Transformamos tu visión en una experiencia tangible de lujo.
+                Desde 2,500 botellas, con acabados premium que transmiten
+                exclusividad.
+              </p>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+              <a
+                href="#contacto"
+                class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all transform hover:scale-105 shadow-lg"
+              >
+                Solicitar Cotización
+              </a>
+              <a
+                href="#productos"
+                class="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-4 rounded-full text-lg font-semibold transition-all"
+              >
+                Ver Productos
+              </a>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mt-16">
+              <div class="text-center">
+                <div class="text-3xl mb-4">🎯</div>
+                <h3 class="text-xl font-semibold mb-2">Pedido Mínimo</h3>
+                <p class="text-slate-600">Desde 2,500 botellas</p>
+              </div>
+              <div class="text-center">
+                <div class="text-3xl mb-4">👑</div>
+                <h3 class="text-xl font-semibold mb-2">Serigrafía UV</h3>
+                <p class="text-slate-600">Acabado premium sin etiquetas</p>
+              </div>
+              <div class="text-center">
+                <div class="text-3xl mb-4">⚡</div>
+                <h3 class="text-xl font-semibold mb-2">Solución Integral</h3>
+                <p class="text-slate-600">De la idea al producto final</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
+        >
+          <i data-lucide="chevron-down" class="h-6 w-6 text-slate-400"></i>
+        </div>
+      </section>
+
+      <section id="productos" class="py-20 bg-white animated-section">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-6 text-slate-900">
+              Opciones de Envase Cuidadosamente Seleccionadas
+            </h2>
+            <p class="text-xl text-slate-600 max-w-3xl mx-auto">
+              Cada botella está diseñada para diferentes necesidades y mercados,
+              desde eventos masivos hasta experiencias de alta gama.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div
+              class="bg-gradient-to-br from-slate-50 to-white rounded-2xl p-8 border border-slate-200 hover:border-blue-300 transition-all transform hover:scale-105 hover:shadow-xl"
+            >
+              <div class="text-center">
+                <div class="text-6xl mb-4">🧊</div>
+                <h3 class="text-xl font-bold mb-2 text-slate-900">
+                  PET Estándar
+                </h3>
+                <p class="text-blue-600 font-semibold mb-4">500ml</p>
+                <p class="text-slate-600 text-sm">Alto volumen y eventos</p>
+              </div>
+            </div>
+            <div
+              class="bg-gradient-to-br from-slate-50 to-white rounded-2xl p-8 border border-slate-200 hover:border-blue-300 transition-all transform hover:scale-105 hover:shadow-xl"
+            >
+              <div class="text-center">
+                <div class="text-6xl mb-4">💎</div>
+                <h3 class="text-xl font-bold mb-2 text-slate-900">
+                  PET Premium
+                </h3>
+                <p class="text-blue-600 font-semibold mb-4">600ml</p>
+                <p class="text-slate-600 text-sm">Marcas diferenciadas</p>
+              </div>
+            </div>
+            <div
+              class="bg-gradient-to-br from-slate-50 to-white rounded-2xl p-8 border border-slate-200 hover:border-blue-300 transition-all transform hover:scale-105 hover:shadow-xl"
+            >
+              <div class="text-center">
+                <div class="text-6xl mb-4">🍾</div>
+                <h3 class="text-xl font-bold mb-2 text-slate-900">
+                  Vidrio Estándar
+                </h3>
+                <p class="text-blue-600 font-semibold mb-4">473ml</p>
+                <p class="text-slate-600 text-sm">Restaurantes y cafeterías</p>
+              </div>
+            </div>
+            <div
+              class="bg-gradient-to-br from-slate-50 to-white rounded-2xl p-8 border border-slate-200 hover:border-blue-300 transition-all transform hover:scale-105 hover:shadow-xl"
+            >
+              <div class="text-center">
+                <div class="text-6xl mb-4">🏆</div>
+                <h3 class="text-xl font-bold mb-2 text-slate-900">
+                  Vidrio Premium
+                </h3>
+                <p class="text-blue-600 font-semibold mb-4">750ml</p>
+                <p class="text-slate-600 text-sm">Hotelería de alta gama</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="servicios"
+        class="py-20 bg-gradient-to-br from-slate-50 to-blue-50 animated-section"
+      >
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-6 text-slate-900">
+              Niveles de Personalización
+            </h2>
+            <p class="text-xl text-slate-600 max-w-3xl mx-auto">
+              Desde etiquetas estándar hasta serigrafía UV premium, encuentra el
+              nivel perfecto para tu marca.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div
+              class="relative rounded-2xl p-8 border-2 transition-all transform hover:scale-105 bg-white border-slate-200 hover:border-blue-300 hover:shadow-lg"
+            >
+              <div class="text-center">
+                <div class="text-4xl mb-4">📋</div>
+                <h3 class="text-lg font-bold mb-2 text-slate-900">Nivel 1</h3>
+                <h4 class="text-xl font-semibold mb-4 text-blue-600">
+                  Etiqueta Estándar
+                </h4>
+                <p class="text-sm text-slate-600">
+                  Etiqueta convencional adherible
+                </p>
+              </div>
+            </div>
+            <div
+              class="relative rounded-2xl p-8 border-2 transition-all transform hover:scale-105 bg-white border-slate-200 hover:border-blue-300 hover:shadow-lg"
+            >
+              <div class="text-center">
+                <div class="text-4xl mb-4">✨</div>
+                <h3 class="text-lg font-bold mb-2 text-slate-900">Nivel 2</h3>
+                <h4 class="text-xl font-semibold mb-4 text-blue-600">
+                  Etiqueta Superior
+                </h4>
+                <p class="text-sm text-slate-600">
+                  Alta calidad, mejor material e impresión
+                </p>
+              </div>
+            </div>
+            <div
+              class="relative rounded-2xl p-8 border-2 transition-all transform hover:scale-105 bg-white border-slate-200 hover:border-blue-300 hover:shadow-lg"
+            >
+              <div class="text-center">
+                <div class="text-4xl mb-4">🎯</div>
+                <h3 class="text-lg font-bold mb-2 text-slate-900">Nivel 3</h3>
+                <h4 class="text-xl font-semibold mb-4 text-blue-600">
+                  Shrink Sleeve
+                </h4>
+                <p class="text-sm text-slate-600">
+                  Fundas termoencogibles 360°
+                </p>
+              </div>
+            </div>
+            <div
+              class="relative rounded-2xl p-8 border-2 transition-all transform hover:scale-105 bg-gradient-to-br from-blue-600 to-blue-800 border-blue-400 text-white shadow-2xl"
+            >
+              <div
+                class="absolute -top-3 -right-3 bg-yellow-400 text-black px-3 py-1 rounded-full text-sm font-bold"
+              >
+                ESTRELLA
+              </div>
+              <div class="text-center">
+                <div class="text-4xl mb-4">👑</div>
+                <h3 class="text-lg font-bold mb-2 text-white">Nivel 4</h3>
+                <h4 class="text-xl font-semibold mb-4 text-blue-100">
+                  Serigrafía UV
+                </h4>
+                <p class="text-sm text-blue-100">
+                  Acabado premium directamente sobre la botella
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="proceso" class="py-20 bg-white animated-section">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-6 text-slate-900">
+              Proceso Simple y Transparente
+            </h2>
+            <p class="text-xl text-slate-600 max-w-3xl mx-auto">
+              Solución "llave en mano" donde tú te enfocas en el diseño y
+              nosotros nos encargamos del resto.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-12">
+            <div class="text-center group">
+              <div
+                class="bg-blue-100 group-hover:bg-blue-200 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 transition-colors"
+              >
+                <span class="text-2xl font-bold text-blue-600">1</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-4 text-slate-900">
+                Consulta y Diseño
+              </h3>
+              <p class="text-slate-600">
+                Nos contactas con tu idea. Te asesoramos en el diseño, elección
+                de botella y tipo de etiquetado.
+              </p>
+            </div>
+
+            <div class="text-center group">
+              <div
+                class="bg-blue-100 group-hover:bg-blue-200 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 transition-colors"
+              >
+                <span class="text-2xl font-bold text-blue-600">2</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-4 text-slate-900">
+                Producción
+              </h3>
+              <p class="text-slate-600">
+                Gestionamos todo el proceso con nuestro socio embotellador. Te
+                mantenemos informado del progreso.
+              </p>
+            </div>
+
+            <div class="text-center group">
+              <div
+                class="bg-blue-100 group-hover:bg-blue-200 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 transition-colors"
+              >
+                <span class="text-2xl font-bold text-blue-600">3</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-4 text-slate-900">Entrega</h3>
+              <p class="text-slate-600">
+                Recibe tu producto final listo para usar o vender, con la
+                calidad premium que representa tu marca.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="contacto"
+        class="py-20 bg-gradient-to-br from-blue-600 to-blue-800 text-white"
+      >
+        <div class="container mx-auto px-6 text-center">
+          <h2 class="text-4xl font-bold mb-6">¿Listo para Elevar tu Marca?</h2>
+          <p class="text-xl mb-8 max-w-2xl mx-auto opacity-90">
+            Únete a las marcas que ya confían en nosotros para crear
+            experiencias premium que impactan a sus clientes.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="mailto:contacto@seren.mx"
+              class="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-full text-lg font-semibold transition-all transform hover:scale-105 shadow-lg"
+            >
+              Solicitar Cotización
+            </a>
+            <a
+              href="https://cal.com/"
+              class="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 rounded-full text-lg font-semibold transition-all"
+            >
+              Agendar Consulta
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <footer class="bg-slate-900 text-white py-12">
+        <div class="container mx-auto px-6">
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div>
+              <div class="flex items-center space-x-2 mb-4">
+                <i data-lucide="droplets" class="h-6 w-6 text-blue-400"></i>
+                <span class="text-xl font-bold">SERÉN</span>
+              </div>
+              <p class="text-slate-400">
+                Transformando marcas a través de agua personalizada de lujo.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-lg font-semibold mb-4">Navegación</h3>
+              <ul class="space-y-2 text-slate-400">
+                <li>
+                  <a
+                    href="#productos"
+                    class="hover:text-white transition-colors"
+                    >Productos</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#servicios"
+                    class="hover:text-white transition-colors"
+                    >Servicios</a
+                  >
+                </li>
+                <li>
+                  <a href="#proceso" class="hover:text-white transition-colors"
+                    >Proceso</a
+                  >
+                </li>
+                <li>
+                  <a href="#contacto" class="hover:text-white transition-colors"
+                    >Contacto</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="text-lg font-semibold mb-4">Servicios Clave</h3>
+              <ul class="space-y-2 text-slate-400">
+                <li>
+                  <a
+                    href="#servicios"
+                    class="hover:text-white transition-colors"
+                    >Serigrafía UV</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#servicios"
+                    class="hover:text-white transition-colors"
+                    >Etiquetado</a
+                  >
+                </li>
+                <li>
+                  <a href="#proceso" class="hover:text-white transition-colors"
+                    >Diseño y Consultoría</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="text-lg font-semibold mb-4">Contacto</h3>
+              <ul class="space-y-2 text-slate-400">
+                <li>
+                  <a
+                    href="mailto:contacto@seren.mx"
+                    class="hover:text-white transition-colors"
+                    >contacto@seren.mx</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="tel:+522221234567"
+                    class="hover:text-white transition-colors"
+                    >+52 222 123 4567</a
+                  >
+                </li>
+                <li>Tehuacán, Puebla, MX</li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="border-t border-slate-800 mt-8 pt-8 text-center text-slate-400"
+          >
+            <p>&copy; 2025 SERÉN. Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
